@@ -143,5 +143,8 @@
     <Resource Include="giphy.gif" />
     <Resource Include="MVVMPattern.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Coffee Ordering with MVVM.exe" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
