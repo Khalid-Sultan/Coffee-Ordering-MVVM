@@ -1,0 +1,19 @@
+﻿<Window x:Class="Coffee_Ordering_with_MVVM.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Coffee_Ordering_with_MVVM"
+        xmlns:views="clr-namespace:Coffee_Ordering_with_MVVM.View.UserControls"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+
+        ResizeMode="NoResize"
+        Title="Main View" Height="450" Width="800">
+    <Grid>
+        <views:CoffeeView x:Name = "CoffeeViewControl" Loaded = "CoffeeViewControl_Loaded"/>
+        <Button Background="CadetBlue" Content="Go Back" FontSize="18" HorizontalAlignment="Left" Margin="633,10,0,0" VerticalAlignment="Top" Width="151" Height="44" Click="Button_Click"/>
+    </Grid>
+
+</Window>    
+    

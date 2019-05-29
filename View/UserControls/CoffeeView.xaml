@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="Coffee_Ordering_with_MVVM.View.UserControls.CoffeeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="Black">
+        <Label Content="These orders have been successfully completed." Foreground="White" FontSize="22" Margin="0,0,295,371" Height="44" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="478"/>
+        <Image Margin="10,11,10.6,-0.8" Source="/Coffee Ordering with MVVM;component/brewing-up-the-best-coffee-shop-location-featured.jpg" Stretch="UniformToFill" Panel.ZIndex="-1" Opacity="0.3"/>
+        <Grid Background="White" Margin="10,84,11,10" Panel.ZIndex="2">
+            <ListView ItemsSource="{Binding CoffeeModels}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn DisplayMemberBinding="{Binding sizeSelection}" Header="Size" Width="125"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding beanSelection}" Header="Beans" Width="150"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding condimentType}" Header="Condiment" Width="120" />
+                        <GridViewColumn DisplayMemberBinding="{Binding iceSelection}" Header="Ice" Width="120"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding creamSelection}" Header="Cream" Width="120"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding price}" Header="Price" Width="100"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </Grid>
+</UserControl>
